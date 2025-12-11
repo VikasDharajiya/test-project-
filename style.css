@@ -17,7 +17,7 @@ a {
 }
 .header-bg {
   position: relative; /* needed for overlay */
-  background-image: url(img/bgimg1.png);
+  background-image: url("img/bgimg1.png");
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -180,7 +180,7 @@ footer h5 {
 }
 .two-col-section {
   position: relative;
-  background-image: url('img/ft.avif'); 
+  background-image: url("img/ft.avif"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -228,3 +228,4 @@ footer h5 {
     width: 100%;
   }
 }
+
