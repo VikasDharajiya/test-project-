@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Logo Header</title>
+
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER WITH BG IMAGE -->
+    <header class="header-bg">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Left Menu -->
+          <div class="collapse navbar-collapse" id="leftMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why Passero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Brand Stores</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Center Logo -->
+          <a class="navbar-brand mx-auto text-center" href="#">
+            <div class="d-flex flex-column align-items-center">
+              <!-- SVG Logo -->
+              <img
+                src="/img/passerologo.svg"
+                alt="Passero Logo"
+                class="img-fluid"
+                style="max-height: 60px"
+              />
+            </div>
+          </a>
+
+          <!-- Right Menu -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="rightMenu"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News&events</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-light px-4" href="#"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hamburger -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#leftMenu, #rightMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>

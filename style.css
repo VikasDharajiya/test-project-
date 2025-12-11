@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header-bg {
+  background-image: url(/img/bgimg1.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  padding: 25px 0;
+}
+
+/* Logo Style */
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Mobile logo center fix */
+@media (max-width: 992px) {
+  .center-logo {
+    order: -1;
+    margin-bottom: 10px;
+  }
+}
