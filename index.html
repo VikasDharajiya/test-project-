@@ -15,6 +15,14 @@
     <header class="header-bg">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <!-- Left Menu -->
           <div class="collapse navbar-collapse" id="leftMenu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
@@ -32,6 +40,10 @@
               </li>
             </ul>
           </div>
+          <!-- Mobile Contact Button -->
+          <a href="#" class="btn btn-outline-light d-lg-none contact-mobile"
+            >Contact</a
+          >
 
           <!-- Center Logo -->
           <a class="navbar-brand mx-auto text-center" href="#">
@@ -63,19 +75,149 @@
               </li>
             </ul>
           </div>
-
-          <!-- Hamburger -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#leftMenu, #rightMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
+      
+      <!-- Slider -->
+      <div
+        id="heroCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <!-- Indicators (optional) -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div
+              class="hero-slide text-center d-flex flex-column justify-content-center align-items-center"
+              style="height: 80vh"
+            >
+              <h1 class="text-white display-3">
+                GET START <br />
+                YOUR FAVOURITE SHOPPING
+              </h1>
+              <p class="hero-text text-light mt-3">
+                Explore the latest collections and get amazing discounts on your
+                favourite brands.
+              </p>
+              <div class="btn-container mt-3">
+                <a href="#" class="btn btn-light">Buy Now</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div
+              class="hero-slide text-center d-flex flex-column justify-content-center align-items-center"
+              style="
+                height: 80vh;
+                background: url('/img/slide2.jpg') center/cover no-repeat;
+              "
+            >
+              <h1 class="text-white display-3">
+                BIG DISCOUNTS <br />
+                ON TOP BRANDS
+              </h1>
+              <p class="hero-text text-light mt-3">
+                Explore the latest collections and get amazing discounts on your
+                favourite brands.
+              </p>
+              <div class="btn-container mt-3">
+                <a href="#" class="btn btn-light">Buy Now</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div
+              class="hero-slide text-center d-flex flex-column justify-content-center align-items-center"
+              style="
+                height: 80vh;
+                background: url('/img/slide3.jpg') center/cover no-repeat;
+              "
+            >
+              <h1 class="text-white display-3">
+                SHOP NOW <br />
+                BEST COLLECTIONS
+              </h1>
+              <p class="hero-text text-light mt-3">
+                Explore the latest collections and get amazing discounts on your
+                favourite brands.
+              </p>
+              <div class="btn-container mt-3">
+                <a href="#" class="btn btn-light">Buy Now</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </header>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start offcanvas-dark" id="mobileMenu">
+      <div class="offcanvas-header">
+        <h5 class="mb-0"></h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white close-btn"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="bootstrap.bundle.min.js"></script>
