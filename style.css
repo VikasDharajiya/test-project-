@@ -93,7 +93,90 @@ a {
 /* Default: horizontal buttons */
 .btn-container {
   display: flex;
-  gap: 15px; 
+  gap: 15px;
+}
+.info-section {
+  background-color: #f8f9fa; /* light background */
+  color: #111;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-dark {
+  background-color: #111;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+.small-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card-phone {
+  color: #000;
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #ff6600 !important;
+  padding-left: 3px;
+}
+
+footer h4,
+footer h5 {
+  color: #a3480c !important;
+}
+.footer-social img {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(98%) saturate(2387%) hue-rotate(12deg) brightness(91%) contrast(105%);
+}
+.footer-social{
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -108,19 +191,16 @@ a {
   }
 }
 
-
 @media (max-width: 768px) {
-   .hero-slide .btn {
+  .hero-slide .btn {
     padding: 6px 15px; /* smaller padding */
     font-size: 0.9rem; /* smaller text */
   }
   .btn-container {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .btn-container .btn {
-    width: 100%;             
+    width: 100%;
   }
-    
 }
-
